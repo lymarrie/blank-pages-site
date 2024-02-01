@@ -16,6 +16,7 @@ import {
 } from "@yext/pages";
 import Favicon from "../public/yext-favicon.ico";
 
+
 /**
  * Not required for static templates, but will contain the stream configuration for
  * entity-powered templates.
@@ -94,7 +95,17 @@ const Static: Template<TemplateRenderProps> = ({
 
   return (
     <>
-      <h1>Static Page</h1>
+      <main className="min-h-screen bg-gray-50 border shadow-md m-20 rounded-md">
+        <section className="flex flex-col items-center justify-center py-20 space-y-10">
+          <h1 className="text-5xl font-semibold">Home Page</h1>
+          <img
+            className="rounded-md shadow-md"
+            width="1000px"
+            height="300px"
+            src="https://www.stocktargetadvisor.com/blog/wp-content/uploads/2023/06/STA-Frame-2023-06-07T143136.727.png"
+          />
+        </section>
+      </main>
     </>
   );
 };

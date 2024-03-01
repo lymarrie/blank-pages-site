@@ -9,7 +9,12 @@ buildConfiguration:
 livePreviewConfiguration:
   setupCommand: ":"
 
-staticRoutes:
+# staticRoutes:
+#   - from: /index.html
+#     to: https://dynamic-routes-test-luc.pgsdemo.com/us.html
+#     status: 301
+
+dynamicRoutes:
   - from: /index.html
-    to: https://dynamic-routes-test-luc.pgsdemo.com/us.html
-    status: 301
+    to: /us.html
+    status: 302

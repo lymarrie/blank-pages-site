@@ -11,7 +11,7 @@ livePreviewConfiguration:
 
 staticRoutes:
   - from: /index.html
-    to: https://dynamic-routes-test-luc.pgsdemo.com/us.html
+    to: https://dynamic-routes-test-luc.pgsdemo.com/static.html
     status: 301
 
 # dynamicRoutes:

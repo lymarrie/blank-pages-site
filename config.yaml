@@ -1,0 +1,15 @@
+buildConfiguration:
+  buildCommand: npm run build
+  installDependenciesStep:
+    command: npm install
+    requiredFiles:
+      - package.json
+      - package-lock.json
+      - .npmrc
+livePreviewConfiguration:
+  setupCommand: ":"
+
+dynamicRoutes:
+  - from: /index.html
+    to: /us.html
+    status: 302

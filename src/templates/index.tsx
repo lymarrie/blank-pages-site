@@ -2,7 +2,6 @@
  * This is an example of how to create a static template that uses getStaticProps to retrieve data.
  */
 import * as React from "react";
-import { fetch } from "@yext/pages/util";
 import "../index.css";
 import {
   Template,
@@ -24,7 +23,7 @@ import Favicon from "../public/yext-favicon.ico";
 export const config: TemplateConfig = {
   // The name of the feature. If not set the name of this file will be used (without extension).
   // Use this when you need to override the feature name.
-  name: "static-example",
+  name: "index",
 };
 
 /**
@@ -83,7 +82,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
  * This is the main template. It can have any name as long as it's the default export.
  * The props passed in here are the direct result from `transformProps`.
  */
-const Static: Template<TemplateRenderProps> = ({
+const Index: Template<TemplateRenderProps> = ({
   relativePrefixToRoot,
   path,
   document,
@@ -110,4 +109,4 @@ const Static: Template<TemplateRenderProps> = ({
   );
 };
 
-export default Static;
+export default Index;
